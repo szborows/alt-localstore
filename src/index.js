@@ -34,8 +34,9 @@ class LocalStore {
 
   restore() {
     let state = JSON.parse(localStorage.getItem(this.key) || '{}');
-    let merged = merge(old, Immutable.fromJS(state));
-    this.store.setState(merged);
+    this.store.setState( (old) => {
+        return merge(old, Immutable.fromJS(state));
+    } );
     this.debug('loading store state from localStorage', state);
     return this.store.state;
   }
