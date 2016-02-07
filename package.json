@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/felixmc/alt-localstore.git"
+    "url": "git+https://github.com/szborows/alt-localstore.git"
   },
   "keywords": [
     "alt",
@@ -23,9 +23,9 @@
   "author": "Felix Milea-Ciobanu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/felixmc/alt-localstore/issues"
+    "url": "https://github.com/szborows/alt-localstore/issues"
   },
-  "homepage": "https://github.com/felixmc/alt-localstore#readme",
+  "homepage": "https://github.com/szborows/alt-localstore#readme",
   "dependencies": {
     "debug": "^2.2.0",
     "immutable": "^3.7.5",
