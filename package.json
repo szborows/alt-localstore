@@ -28,7 +28,8 @@
   "homepage": "https://github.com/felixmc/alt-localstore#readme",
   "dependencies": {
     "debug": "^2.2.0",
-    "immutable": "^3.7.5"
+    "immutable": "^3.7.5",
+    "merge": "^1.2.0"
   },
   "devDependencies": {
     "babel-cli": "^6.0.14",

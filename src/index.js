@@ -1,6 +1,6 @@
 import debug from 'debug';
 import Immutable from 'immutable';
-
+import merge from 'merge';
 
 class LocalStore {
   constructor(store, key = store.displayName) {
@@ -34,7 +34,8 @@ class LocalStore {
 
   restore() {
     let state = JSON.parse(localStorage.getItem(this.key) || '{}');
-    this.store.setState( old => old.merge(Immutable.fromJS(state)) );
+    let merged = merge(old, Immutable.fromJS(state));
+    this.store.setState(merged);
     this.debug('loading store state from localStorage', state);
     return this.store.state;
   }
